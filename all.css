@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(1.webp);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+    margin: 15px 10px;
+    border-radius: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 10px;
+}
+nav ul li a{
+    padding: .8em 1em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: white;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #3344a7;
+    box-shadow: 0px 15px 20px rgb(48, 46, 209);
+    color: #fff;
+    transform: translateY(-7px);
+
+}
+nav ul li a:active{
+    transform: translateY(-1px);
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 50px;
+    color: black;
+}
+
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #192eb8;
+}
+
+/*---------about me----------*/
+
+#about{
+    padding: 80px 0;
+    color: white;
+    background-image: url(back3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#skill{
+    font-size: 40px;
+    color: white;
+}
+
+.ptag{
+    font-size: 18px;
+}
+ul{
+    font-size: 18px;
+}
+/*---------education----------*/
+
+#educ{
+    padding: 80px 0;
+    color: white;
+    background-image: url(back3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.col{
+    flex-basis: 35%;
+}
+.col img{
+    width: 65%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 65%;
+}
+
+/*---------favorites----------*/
+
+#favorite{
+    padding: 80px 0;
+    background-image: url(back3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.sub-title2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #3b41ab);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #3344a7;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    background-color: blue;
+}
+.btn:hover{
+    background: #3344a7;
+}
+
+/*---------dreams----------*/
+#dream{
+    padding: 80px 0;
+    background-image: url(back3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.sub-title2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+#sen{
+    text-align: center;
+}
+.project-list2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 17%;
+    margin-top: 50px;
+
+}
+
+.project2{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project2 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layers{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #3b41ab);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layers h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.project2:hover img{
+    transform: scale(1.1);
+}
+
+.project2:hover .layers{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #3344a7;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+    background-color: blue;
+}
+
+.btn:hover{
+    background: #3344a7;
+}
+
+/*---------contact----------*/
+
+#contact{
+    padding: 80px 0;
+    background-image: url(back3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: blue;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: blue;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: blue;
+    cursor: pointer;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: blue;
+}
+
+/*-----------scroll bar-----------*/
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background: lightblue;
+}
+
+::-webkit-scrollbar-thumb{
+    background: lightseagreen;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: blue;
+}
